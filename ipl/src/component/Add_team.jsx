@@ -28,7 +28,7 @@ const PlayerForm = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/players",
+                "https://ipl-6769.onrender.com/api/players",
                 playerData
             );
             console.log("Player data posted successfully:", response.data);

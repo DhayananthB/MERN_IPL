@@ -10,7 +10,7 @@ const Schedule = () => {
     useEffect(() => {
         const fetchSchedule = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/schedule');
+                const response = await axios.get('https://ipl-6769.onrender.com/schedule');
                 const data = response.data;
                 setMatches(data);
             } catch (error) {

@@ -13,7 +13,7 @@ const Team = ({ id }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/players");
+        const response = await axios.get("https://ipl-6769.onrender.com/api/players");
         const fetchedPlayers = response.data;
 
         updatePlayers(fetchedPlayers);
